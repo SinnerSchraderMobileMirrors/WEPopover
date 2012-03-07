@@ -7,6 +7,7 @@
 //
 
 #import "WEPopoverContainerView.h"
+@class AppSkin;
 
 @implementation WEPopoverContainerViewProperties
 
@@ -160,6 +161,10 @@ permittedArrowDirections:(UIPopoverArrowDirection)permittedArrowDirections
 	
 	UIImage *upArrowImage = [UIImage imageNamed:properties.upArrowImageName];
 	UIImage *downArrowImage = [UIImage imageNamed:properties.downArrowImageName];
+    if(!downArrowImage){
+        downArrowImage = [[AppSkin sharedInstance] imageNamed:@"kiosk_spi_tooltip.png"];
+    }
+    
 	UIImage *leftArrowImage = [UIImage imageNamed:properties.leftArrowImageName];
 	UIImage *rightArrowImage = [UIImage imageNamed:properties.rightArrowImageName];
 	

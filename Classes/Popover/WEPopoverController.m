@@ -292,8 +292,8 @@
 	ret.leftContentMargin = contentMargin;
 	ret.rightContentMargin = contentMargin;
 	ret.topContentMargin = contentMargin;
-	ret.bottomContentMargin = contentMargin;
-	ret.arrowMargin = 1.0;
+	ret.bottomContentMargin = 0.0;
+	ret.arrowMargin = 0.0;
 	
 	ret.upArrowImageName = @"popoverArrowUpSimple.png";
 	ret.downArrowImageName = @"popoverArrowDownSimple.png";
